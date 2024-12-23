@@ -23,16 +23,17 @@ class Controlador
 
 		$result = $m_login->Login($user, $pass);
 		if ($result != 1 && $result != 2){
-			$_SESSION["idUsuario"] = $result['PERID'];
-			$_SESSION["Correo"] = $result['NOMBRE'];
-			require_once("view/dashboard/v_dahsboard.php");
+			$_SESSION["NOMBRE"] = $result['NOMBRE'];
+			require_once("view/header.php");
 			//echo  "<script>alert('Haz ingresado correctamente')</script>";
 		}
 		if ($result == 1) {
-			header("Location:index.php?view=login2&danger=1");
+			// echo  "<script>alert('EXISTE USUARIO PERO LA CLAVE ESTA MAL')</script>";
+			header("Location:index.php?view=error_login&danger=1");
 		}
 		if ($result == 2) {
-			header("Location:index.php?view=login2&danger=2");
+			// echo  "<script>alert('NO EXISTE USUARIO')</script>";
+			header("Location:index.php?view=error_login&danger=2");
 		}
 	}
 

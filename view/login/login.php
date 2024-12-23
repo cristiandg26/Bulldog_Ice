@@ -12,53 +12,52 @@
 </head>
 <body>
     <div id="login-wrap">
-    <div class="login-image">
-        <nav class="login-image-nav">
-        <ul>
-            <li style="width: 4%;"><a href="#"><div class="div_logo"><img src="public/dist/img/logo_bdi_sf.png" alt="error" class="logo1"></div></a></li>
-            <li><a href="#">Contactenos</a></li>
-        </ul>
-        </nav>
-        <div class="login-image-text">
-        <h2 class="display-lg text-white">Un toque frío para tu día...</h2>
-        <h2 class="display-lg text-primary">¡porque el sabor sí importa!</h2>
-        </div>
-        <nav class="login-image-footer">
-        <ul>
-            <li>
-            <a href="#">
-                <span class="text-white">Celular: </span><span class="text-primary">321 452 7264 & 322 251 5763</span>
-            </a>
-            </li>
-            <li>
-            </li>
-        </ul>
-        </nav>
-    </div>
-    <div class="login-card">
-        <div class="login-card-header">
-            <img src="public/dist/img/logo_bdi_sf.png" alt="error" class="logo2">
-            <p class="text-muted">¡Bienvenido a nuestro sistema de gestión integral! Inicie sesión a continuación para optimizar su inventario y contabilidad.</p>
-        </div>
-        <form method="POST" action="?view=starting" method="post" class="login-card-form">
-            <div class="input-group">
-                <input type="text" name="user" id="user" placeholder="Usuario">
-                <i class="m-i material-icons">Usuario</i>
+        <div class="login-image">
+            <nav class="login-image-nav">
+            <ul>
+                <li style="width: 4%;"><a href="#"><div class="div_logo"><img src="public/dist/img/logo_bdi_sf.png" alt="error" class="logo1"></div></a></li>
+                <li><a href="#">Contactenos</a></li>
+            </ul>
+            </nav>
+            <div class="login-image-text">
+            <h2 class="display-lg text-white">Un toque frío para tu día...</h2>
+            <h2 class="display-lg text-primary">¡porque el sabor sí importa!</h2>
             </div>
-            <div class="input-group">
-                <input type="password" name="pass" id="pass" placeholder="Contraseña">
-                <i class="m-i material-icons">Contraseña</i>
+            <nav class="login-image-footer">
+            <ul>
+                <li>
+                <a href="#">
+                    <span class="text-white">Celular: </span><span class="text-primary">321 452 7264 & 322 251 5763</span>
+                </a>
+                </li>
+                <li>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        <div class="login-card">
+            <div class="login-card-header">
+                <img src="public/dist/img/logo_bdi_sf.png" alt="error" class="logo2">
+                <p class="text-muted">¡Bienvenido a nuestro sistema de gestión integral! Inicie sesión a continuación para optimizar su inventario y contabilidad.</p>
             </div>
-            <div class="btn-group">
-                <button type="submit" vlaue="Submit" class="btn btn-primary">Inicio de sesion</button>
+            <form method="POST" action="?view=starting" method="post" class="login-card-form">
+                <div class="input-group">
+                    <input type="text" name="user" id="user" placeholder="Usuario">
+                    <i class="m-i material-icons">Usuario</i>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="pass" id="pass" placeholder="Contraseña">
+                    <i class="m-i material-icons">Contraseña</i>
+                </div>
+                <div class="btn-group">
+                    <button type="submit" vlaue="Submit" class="btn btn-primary">Inicio de sesion</button>
+                </div>
+            </form>
+            <div class="login-card-footer">
+                <p class="text-muted">2024 Copyright &copy; CMA, Commpany.</p>
             </div>
-        </form>
-        <div class="login-card-footer">
-            <p class="text-muted">2024 Copyright &copy; CMA, Commpany.</p>
         </div>
     </div>
-    </div>
-
     <script src="public/dist/js/login.js"></script>
 </body>
 </html>

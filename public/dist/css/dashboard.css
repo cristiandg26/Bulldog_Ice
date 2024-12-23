@@ -1,0 +1,48 @@
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+#sidebar {
+    width: 80px;
+    background-color: #222831;
+    color: #ffffff;
+    height: 100vh;
+    position: fixed;
+}
+#sidebar .nav-link {
+    color: #aaaaaa;
+    font-size: 1.5rem;
+    text-align: center;
+}
+#sidebar .nav-link.active {
+    background-color: #30475e;
+    color: #00d1ff;
+}
+#sidebar .profile {
+    margin-top: auto;
+    padding-bottom: 10px;
+    text-align: center;
+}
+#sidebar .profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.content {
+    margin-left: 80px;
+    padding: 20px;
+}
+
+.img-desktop{
+    margin-top: 10%;
+    margin-left: 35%;
+    width: 30%;
+}
+
+.content {
+    display: none; /* Ocultar todas las secciones al inicio */
+}
+.content.active {
+    display: block; /* Mostrar solo la sección activa */
+}
